@@ -129,8 +129,7 @@ void loop(){
      cmri.set_bit(9, !digitalRead(12));  // S10 = address 1010 in JMRI 
      //DO  NOT READ PIN 13
      cmri.set_bit(10, !digitalRead(14)); // S11 = address 1011 in JMRI 
-     // DO NOT READ PINS 20 21
-     cmri.set_bit(11, !digitalRead(15)); // S12 = address 1012 in JMRI 
+     cmri.set_bit(11, !digitalRead(15)); 
      cmri.set_bit(12, !digitalRead(16));
      cmri.set_bit(13, !digitalRead(17)); 
      cmri.set_bit(14, !digitalRead(18));
