@@ -117,7 +117,7 @@ void loop(){
    // Ensure bit address matches pin, i.e. a sensor attached to pin 17 corresponds to bit 13 (because we've skipped pins 0, 1, 2 and 13) which is address 1014 for this CMRI node
 
       // Do not read 0, 1 or 2 SN EQUALS INFRARED SENSORS
-     cmri.set_bit(0, !digitalRead(3));   //sn 1 = address 2001 in JMRI
+     cmri.set_bit(0, !digitalRead(3));   //sn 1 = address 1001 in JMRI
      cmri.set_bit(1, !digitalRead(4));   
      cmri.set_bit(2, !digitalRead(5));   
      cmri.set_bit(3, !digitalRead(6));   
@@ -126,17 +126,17 @@ void loop(){
      cmri.set_bit(6, !digitalRead(9));   
      cmri.set_bit(7, !digitalRead(10));  
      cmri.set_bit(8, !digitalRead(11));  
-     cmri.set_bit(9, !digitalRead(12));  // sn 10 = address 2010 in JMRI 
+     cmri.set_bit(9, !digitalRead(12));  // sn 10 = address 1010 in JMRI 
      //DO  NOT READ PIN 13
-     cmri.set_bit(10, !digitalRead(14)); // sn 11 = address 2011 in JMRI 
+     cmri.set_bit(10, !digitalRead(14)); // sn 11 = address 1011 in JMRI 
      // DO NOT READ PINS 20 21
-     cmri.set_bit(11, !digitalRead(15)); // INPUT 12 = address 2012 in JMRI 
+     cmri.set_bit(11, !digitalRead(15)); // INPUT 12 = address 1012 in JMRI 
      cmri.set_bit(12, !digitalRead(16));
      cmri.set_bit(13, !digitalRead(17)); 
      cmri.set_bit(14, !digitalRead(18));
-     cmri.set_bit(15, !digitalRead(19)); // INPUT 16 = address 2016 in JMRI
+     cmri.set_bit(15, !digitalRead(19)); // INPUT 16 = address 1016 in JMRI
      // DO NOT READ PINS 20 21
-     cmri.set_bit(16, !digitalRead(22)); // INPUT 17 = address 2017 in JMRI
+     cmri.set_bit(16, !digitalRead(22)); // INPUT 17 = address 1017 in JMRI
      cmri.set_bit(17, !digitalRead(23));
      cmri.set_bit(18, !digitalRead(24));
      cmri.set_bit(19, !digitalRead(25));
@@ -183,7 +183,7 @@ void loop(){
      cmri.set_bit(60, !digitalRead(66));  
      cmri.set_bit(61, !digitalRead(67)); 
      cmri.set_bit(62, !digitalRead(68)); 
-     cmri.set_bit(63, !digitalRead(69)); // INPUT 66 = address 2064 in JMRI
+     cmri.set_bit(63, !digitalRead(69)); // INPUT 66 = address 1064 in JMRI
 
       
 }
